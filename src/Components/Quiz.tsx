@@ -1,8 +1,8 @@
 import React,{useEffect, useState} from 'react'
 import {Container, Row, Col} from 'reactstrap';
-import {Badge, Button, Form, FormGroup, Label, Input, Alert} from 'reactstrap';
+import {Badge, Button, Form, FormGroup, Label, Input} from 'reactstrap';
 import {getQuizCollection} from './../Services/quiz-api';
-import {QuestionType, QuizInfoType, CertificateType} from './../Types/quiz-types';
+import {QuestionType, QuizInfoType} from './../Types/quiz-types';
 import QuestionCard from './QuestionCard';
 import QuizCompleted from './QuizCompleted';
 
@@ -23,7 +23,7 @@ function Quiz(props:QuizInfoType) {
         } 
 
         fetchData();
-    },[]);
+    },[props.level]);
 
 
     const handleNameChange = (event: any) => {
@@ -57,7 +57,7 @@ function Quiz(props:QuizInfoType) {
     }
 
     const getColor = () =>{
-        if(nextQuiz == 0){
+        if(nextQuiz === 0){
             return 'secondary';
         }
         else{

@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
@@ -8,12 +8,9 @@ import Quiz from './Components/Quiz';
 
 import Footer from './Components/Footer';
 
-import {QuizInfoType} from './Types/quiz-types';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'App.css';
-
-
-
 
 
 

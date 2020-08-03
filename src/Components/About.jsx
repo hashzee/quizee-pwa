@@ -2,11 +2,6 @@ import React from 'react'
 import {Container, Row, Col} from 'reactstrap';
 import useWebAnimations from "@wellyshen/use-web-animations";
 
-const reactIcon = require("./../images/react.png");
-const bootstrapIcon = require("./../images/bootstrap.png");
-const typeIcon = require("./../images/typescript.png");
-const pdfIcon = require("./../images/pdflib.png");
-
 function About() {
 
     /* Animation Codes */

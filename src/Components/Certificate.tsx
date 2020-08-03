@@ -13,7 +13,7 @@ async function handlePDF(name:string, level:string) {
     const helveticaFont = await pdfDoc.embedFont(StandardFonts.Helvetica);
     const pages = pdfDoc.getPages();
     const firstPage = pages[0];
-    const { width, height } = firstPage.getSize();
+
     // Draw a string of text diagonally across the first page
     firstPage.drawText(name, {
         x: 360,
