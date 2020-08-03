@@ -1,0 +1,139 @@
+body{
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.myNavBar{
+  background-color: #000 !important;
+}
+
+.bgCup{
+  position: absolute;
+	left: -650px;
+  top: 350px;
+  transform: scale(2);
+  opacity: 0.5; 
+  z-index: -9999;
+	animation: rotation 6s alternate-reverse infinite, slideIn 12s alternate-reverse infinite;
+
+}
+
+@keyframes slideIn {
+  to{
+    left: 100%;
+  }
+}
+
+@keyframes rotation {
+  to{
+    transform: rotate(45deg);
+  }
+}
+
+.bgShape1{
+  border-radius: 60% 40% 30% 70% / 60% 30% 10% 40%;
+  background-color: rgba(255,255,255,0.08);
+  width:100%;
+  animation: bgShapeMovement 3s alternate-reverse infinite;
+  border:1px solid #ccc;
+}
+
+.bgShape2{
+  border-radius: 70% 20% 50% 33% / 60% 30% 52% 40%;
+  background-color: rgba(255,255,255,0.08);
+  width:100%;
+  animation: bgShapeMovement2 3s alternate infinite;
+  border:1px solid #ccc;
+}
+
+.bgShape3{
+  border-radius: 20% 60% 50% 10% / 60% 30% 70% 40%;
+  background-color: rgba(255,255,255,0.08);
+  width:100%;
+  border:1px solid #ccc;
+  animation: bgShapeMovement3 3s alternate-reverse infinite;
+}
+
+@keyframes bgShapeMovement { 
+  to{
+    border-radius: 20% 40% 30% 70%;
+  }
+}
+
+@keyframes bgShapeMovement2 { 
+  to{
+    border-radius: 55% 20% 5% 55%;
+  }
+}
+
+@keyframes bgShapeMovement3 { 
+  to{
+    border-radius: 20% 5% 16% 50%;
+  }
+}
+
+.cardAnim{
+  background-color: '#DfDfDf';
+  color: black;
+}
+
+.cardAnim:hover
+{
+  animation : cardBounce 6s alternate-reverse infinite;
+}
+
+@keyframes cardBounce { 
+  to{
+    transform: translateY(-20px) scale(1.05);
+    box-shadow: 8px 8px 5px #DDDDDD ;
+  }
+  /* from{
+    transform: translateY(10px) scale(1.0);
+  }   */
+}
+
+.easy{color:green;}
+.medium{color:blue;}
+.hard{color:red;}
+
+.easy, .medium, .hard{
+  text-transform: uppercase;
+}
