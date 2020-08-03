@@ -1,5 +1,7 @@
-import React from 'react'
+import React from 'react';
 import {Container, Row, Col, Button, Card, CardTitle, CardText, CardImg } from 'reactstrap';
+import {Link} from 'react-router-dom';
+
 const q1 = require("./../svg/quiz_easy.svg") as string;
 const q2 = require("./../svg/quiz_medium.svg") as string;
 const q3 = require("./../svg/quiz_hard.svg") as string;
@@ -18,7 +20,7 @@ function Quizes() {
             </div>
             <CardTitle style={{fontSize: "30px", textAlign: "center"}}>Level 1</CardTitle>
             <CardText style={{textAlign: "center"}}>Easy difficluty level, for the new lerners! Pass and get your Certificate !</CardText>
-            <Button inverse color="danger" to='/easy'>Start Easy</Button>
+            <Link to='/easy'><Button inverse color="danger">Start Easy</Button></Link>
           </Card>
         </Col>
         <Col sm="4" lg="4">
@@ -28,7 +30,7 @@ function Quizes() {
             </div>            
             <CardTitle style={{fontSize: "30px", textAlign: "center"}}>Level 2</CardTitle>
             <CardText style={{textAlign: "center"}}>Medium level for the intermediate users! Can you earn a certificate ?</CardText>
-            <Button inverse color="danger" to='/medium'>Start Medium</Button>
+            <Link to='/medium'><Button inverse color="danger">Start Medium</Button></Link>
           </Card>
         </Col>
         <Col sm="4" lg="4" >
@@ -38,7 +40,7 @@ function Quizes() {
             </div>            
             <CardTitle style={{fontSize: "30px", textAlign: "center"}}>Level 3</CardTitle>
             <CardText style={{textAlign: "center"}}>Master level, for the legend. You want a certificate, Huh ?</CardText>
-            <Button inverse color="danger" to='/hard'>Start Hard</Button>
+            <Link to='/hard'><Button inverse color="danger">Start Hard</Button></Link>
           </Card>
         </Col>
       </Row>

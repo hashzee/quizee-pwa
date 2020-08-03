@@ -1,6 +1,7 @@
 import React from 'react'
 import { QuizCompletedType } from './../Types/quiz-types';
 import { Button, Card, CardHeader, CardBody, CardText, CardFooter } from 'reactstrap';
+import {Link} from 'react-router-dom';
 import Certificate from './Certificate';
 
 function QuizCompleted(props: QuizCompletedType) {
@@ -43,7 +44,7 @@ function QuizCompleted(props: QuizCompletedType) {
                 <CardFooter className="text-muted">
                     <Button href='/' color='primary'>Home Page</Button> 
                     {(per<70)?
-                        <Button to={`/${props.qType}`} color='danger' className='ml-5'>Retry Quiz</Button> 
+                        <Link to={`/${props.qType}`}><Button color='danger' className='ml-5'>Retry Quiz</Button></Link>
                         :
                         <Certificate name={props.name} level={props.qType} />
                     }     
