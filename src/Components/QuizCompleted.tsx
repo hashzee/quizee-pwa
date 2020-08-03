@@ -33,7 +33,7 @@ function QuizCompleted(props: QuizCompletedType) {
                             </>
                             :
                             <>
-                                <p>You did a good job and got ${per}% correct answers.</p>
+                                <p>You did a good job and got {per}% correct answers.</p>
                                 <p>Click on the button below to get your cool certificate !</p> 
                             </>                           
                         }        
