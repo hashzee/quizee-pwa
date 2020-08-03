@@ -6,7 +6,7 @@ const q3 = require("./../svg/quiz_hard.svg") as string;
 function Quizes() {
     return (
         <>
-        <Container>
+        <Container id='quizes'>
           <Row>
             <Col className='col-12 mb-5 text-center'><h1>Our Quizes</h1></Col>
           </Row>

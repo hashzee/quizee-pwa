@@ -31,3 +31,8 @@ export type QuizCompletedType = {
     total: number,
     qType: string
 }
+
+export type CertificateType = {
+    name: string,
+    level: string
+}

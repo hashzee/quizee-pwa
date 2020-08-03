@@ -20,23 +20,11 @@ function Navigation() {
             </NavItem> 
 
             <NavItem>
-                <NavLink href="#">Our Quizes</NavLink>
+                <NavLink href="#quizes">Our Quizes</NavLink>
             </NavItem> 
 
             <NavItem>
-                <NavLink href="#">About Us</NavLink>
-            </NavItem> 
-
-            <NavItem>
-                <NavLink href="#">My Projects</NavLink>
-            </NavItem> 
-
-            <NavItem>
-                <NavLink href="#">My Skills</NavLink>
-            </NavItem> 
-
-            <NavItem>
-                <NavLink href="#">Contact Us</NavLink>
+                <NavLink href="#about">About</NavLink>
             </NavItem>            
 
             </Nav>

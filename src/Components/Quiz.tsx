@@ -2,10 +2,11 @@ import React,{useEffect, useState} from 'react'
 import {Container, Row, Col} from 'reactstrap';
 import {Badge, Button, Form, FormGroup, Label, Input, Alert} from 'reactstrap';
 import {getQuizCollection} from './../Services/quiz-api';
-import {QuestionType, QuizInfoType} from './../Types/quiz-types';
+import {QuestionType, QuizInfoType, CertificateType} from './../Types/quiz-types';
 import QuestionCard from './QuestionCard';
 import QuizCompleted from './QuizCompleted';
-import Certificate from './Certificate';
+
+const loading = require("./../images/giphy.webp") as string;
 
 function Quiz(props:QuizInfoType) {
     const [quiz, setQuiz] = useState<QuestionType[]>([]);
@@ -75,14 +76,20 @@ function Quiz(props:QuizInfoType) {
     if(!quiz.length){
         return (
             <div>
-                <h2>Loading....</h2>
+                <Container style={{minHeight:'100vh', marginTop:'10%'}}>
+                    <Row className='text-center'>
+                        <Col>
+                            <img src={loading} alt='loading' className='w-50' />
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         )
     }
     else{
         return (
             <div>
-            <Container style={{minHeight:'65vh'}}>
+            <Container style={{minHeight:'69vh'}}>
                     <Row>
                         <Col className='text-center'>
                             <h1 className='m-4'>Lets start the <span className={quizType}>{quizType}</span> Quiz.<br />Best of luck{' '+name}!</h1>
@@ -114,7 +121,6 @@ function Quiz(props:QuizInfoType) {
                                             onChange={handleNameChange}
                                             placeholder="Whats your good name ?" />
                                         <Button value='Submit' color="primary" className='m-3'>Start Quiz</Button>
-                                        <Certificate />
                                     </FormGroup>
                                 </Form>)}
                         </Col>                    

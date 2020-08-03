@@ -3,38 +3,33 @@ import {Container, Row, Col} from 'reactstrap';
 function Footer() {
     return (
         <>
-   <footer className="pt-4 mt-5 pt-md-5" style={{backgroundColor:'#222'}}>
+   <footer className="pt-4 mt-5 pt-md-5" style={{backgroundColor:'#222', color:'#F5f5f5'}}>
         <Container>
         <Row>
           <Col className="col-6 col-md">
             <h5>Features</h5>
             <ul className="list-unstyled text-small">
-              <li><a className="text-muted" href="#">Cool stuff</a></li>
-              <li><a className="text-muted" href="#">Random feature</a></li>
-              <li><a className="text-muted" href="#">Team feature</a></li>
-              <li><a className="text-muted" href="#">Stuff for developers</a></li>
-              <li><a className="text-muted" href="#">Another one</a></li>
-              <li><a className="text-muted" href="#">Last time</a></li>
+              <li><a className="text-muted" href="#">Project 5 & 6</a></li>
+              <li><a className="text-muted" href="#">by Zeeshan Hashmi</a></li>
             </ul>
           </Col>
           <Col className="col-6 col-md">
             <h5>Resources</h5>
             <ul className="list-unstyled text-small">
-              <li><a className="text-muted" href="#">Resource</a></li>
-              <li><a className="text-muted" href="#">Resource name</a></li>
-              <li><a className="text-muted" href="#">Another resource</a></li>
-              <li><a className="text-muted" href="#">Final resource</a></li>
+              <li><a className="text-muted" href="https://github.com/hashzee/quizee">Github</a></li>
+              <li><a className="text-muted" href="#">TypeScript</a></li>
             </ul>
           </Col>
           <Col className="col-6 col-md">
-            <h5>About</h5>
+            <h5>Resources</h5>
             <ul className="list-unstyled text-small">
-              <li><a className="text-muted" href="#">Team</a></li>
-              <li><a className="text-muted" href="#">Locations</a></li>
-              <li><a className="text-muted" href="#">Privacy</a></li>
-              <li><a className="text-muted" href="#">Terms</a></li>
-            </ul>
+              <li><a className="text-muted" href="#">PDF-Lib</a></li>
+              <li><a className="text-muted" href="#">Web Animation API</a></li> 
+            </ul>             
           </Col>
+        </Row>
+        <Row>
+          <Col>Copyright (C) 2020</Col>
         </Row>
         </Container>
       </footer>            
