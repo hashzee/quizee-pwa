@@ -23,7 +23,7 @@ function Quiz(props:QuizInfoType) {
         } 
 
         fetchData();
-    },[props.level]);
+    },[props.level,props.questions]);
 
 
     const handleNameChange = (event: any) => {

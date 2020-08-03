@@ -15,7 +15,7 @@ function Hero() {
                 <h5 className='mt-3 pl-2'> Share your surprise on social media</h5>
                 </Col>
                 <Col className='col-12 col-md-6' style={{textAlign: "center"}}>
-                <img src={hero} />
+                <img src={hero} alt="Quizee"/>
                 </Col>              
             </Row>
             </Container>
