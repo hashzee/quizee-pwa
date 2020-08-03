@@ -18,7 +18,7 @@ function Quizes() {
             </div>
             <CardTitle style={{fontSize: "30px", textAlign: "center"}}>Level 1</CardTitle>
             <CardText style={{textAlign: "center"}}>Easy difficluty level, for the new lerners! Pass and get your Certificate !</CardText>
-            <Button inverse color="danger" href='/easy'>Start Easy</Button>
+            <Button inverse color="danger" to='/easy'>Start Easy</Button>
           </Card>
         </Col>
         <Col sm="4" lg="4">
@@ -28,7 +28,7 @@ function Quizes() {
             </div>            
             <CardTitle style={{fontSize: "30px", textAlign: "center"}}>Level 2</CardTitle>
             <CardText style={{textAlign: "center"}}>Medium level for the intermediate users! Can you earn a certificate ?</CardText>
-            <Button inverse color="danger" href='/medium'>Start Medium</Button>
+            <Button inverse color="danger" to='/medium'>Start Medium</Button>
           </Card>
         </Col>
         <Col sm="4" lg="4" >
@@ -38,7 +38,7 @@ function Quizes() {
             </div>            
             <CardTitle style={{fontSize: "30px", textAlign: "center"}}>Level 3</CardTitle>
             <CardText style={{textAlign: "center"}}>Master level, for the legend. You want a certificate, Huh ?</CardText>
-            <Button inverse color="danger" href='/hard'>Start Hard</Button>
+            <Button inverse color="danger" to='/hard'>Start Hard</Button>
           </Card>
         </Col>
       </Row>

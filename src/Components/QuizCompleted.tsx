@@ -41,9 +41,9 @@ function QuizCompleted(props: QuizCompletedType) {
                     
                 </CardBody>
                 <CardFooter className="text-muted">
-                    <Button href='/' color='primary'>Go Home Page</Button> 
+                    <Button href='/' color='primary'>Home Page</Button> 
                     {(per<70)?
-                        <Button href={`/${props.qType}`} color='danger' className='ml-5'>Retry Quiz</Button> 
+                        <Button to={`/${props.qType}`} color='danger' className='ml-5'>Retry Quiz</Button> 
                         :
                         <Certificate name={props.name} level={props.qType} />
                     }     

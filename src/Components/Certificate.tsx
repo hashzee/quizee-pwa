@@ -31,7 +31,7 @@ async function handlePDF(name:string, level:string) {
 
 function Certificate(props:CertificateType) {
     return (
-            <Button className='ml-5' color='success' onClick={() => handlePDF(props.name, props.level)}>Get your certificate</Button>
+            <Button className='ml-5' color='success' onClick={() => handlePDF(props.name, props.level)}>Certificate</Button>
     )
 }
 
