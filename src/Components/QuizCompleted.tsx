@@ -1,7 +1,7 @@
 import React from 'react'
 import { QuizCompletedType } from './../Types/quiz-types';
 import { Button, Card, CardHeader, CardBody, CardText, CardFooter } from 'reactstrap';
-import {Link} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import Certificate from './Certificate';
 
 function QuizCompleted(props: QuizCompletedType) {
@@ -17,6 +17,11 @@ function QuizCompleted(props: QuizCompletedType) {
     else {
         result = 'Congratulations! you passed';
         resultClass = 'success';
+    }
+
+    const handleRetry = () => {
+        console.log('/'+props.qType);
+        return <Redirect to={'/'+props.qType} />
     }
 
     return (
@@ -44,13 +49,7 @@ function QuizCompleted(props: QuizCompletedType) {
                 <CardFooter className="text-muted">
                     <Button href='/' color='primary'>Home Page</Button> 
                     {(per<70)?
-                        (props.qType === 'hard')?    
-                            <Button tag={Link} color='danger' to='/hard' className='ml-3'>Retry Hard</Button>
-                            :
-                            (props.qType === 'medium')? 
-                            <Link to='/medium'><Button color='danger' className='ml-3'>Retry Medium</Button></Link>
-                            : 
-                            <Link to='/easy'><Button color='danger' className='ml-3'>Retry Easy</Button></Link>                            
+                        <Button color='danger' className='ml-3' onClick={handleRetry}>Retry {props.qType}</Button>                           
                         :
                         <Certificate name={props.name} level={props.qType} />
                     }     
