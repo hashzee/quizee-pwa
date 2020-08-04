@@ -45,12 +45,12 @@ function QuizCompleted(props: QuizCompletedType) {
                     <Button href='/' color='primary'>Home Page</Button> 
                     {(per<70)?
                         (props.qType === 'hard')?    
-                            <Link to='/'><Button color='danger' className='ml-3'>Retry Hard</Button></Link>
+                            <Link to='/hard'><Button color='danger' className='ml-3'>Retry Hard</Button></Link>
                             :
                             (props.qType === 'medium')? 
-                            <Link to='/'><Button color='danger' className='ml-3'>Retry Medium</Button></Link>
+                            <Link to='/medium'><Button color='danger' className='ml-3'>Retry Medium</Button></Link>
                             : 
-                            <Link to='/'><Button color='danger' className='ml-3'>Retry Easy</Button></Link>                            
+                            <Link to='/easy'><Button color='danger' className='ml-3'>Retry Easy</Button></Link>                            
                         :
                         <Certificate name={props.name} level={props.qType} />
                     }     
