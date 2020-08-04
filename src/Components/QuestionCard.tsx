@@ -13,7 +13,7 @@ const answerSelected = (event: any) => {
 
     return (
         <>
-            <div className="question-box text-justify">
+            <div className="question-box text-left">
                 <form onSubmit={(e:React.FormEvent<EventTarget>)=>callBack(e,userAnswer)}>
                 <Card>
                     <CardHeader>{renderHTML(question)}</CardHeader>
