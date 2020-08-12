@@ -16,7 +16,7 @@ function Navigation() {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
             <NavItem>
-                <NavLink href="#">Home</NavLink>
+                <NavLink href="/">Home</NavLink>
             </NavItem> 
 
             <NavItem>

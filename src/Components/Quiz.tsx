@@ -5,6 +5,7 @@ import {getQuizCollection} from './../Services/quiz-api';
 import {QuestionType, QuizInfoType} from './../Types/quiz-types';
 import QuestionCard from './QuestionCard';
 import QuizCompleted from './QuizCompleted';
+import { askForPermissioToReceiveNotifications } from './../push-notification';
 
 const loading = require("./../images/giphy.webp") as string;
 
@@ -50,6 +51,7 @@ function Quiz(props:QuizInfoType) {
 
     const handleNameSubmit = (event: any) =>{
         event.preventDefault();
+        askForPermissioToReceiveNotifications();
         setName(cname);
         if(name !== ''){
             return true;

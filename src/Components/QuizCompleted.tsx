@@ -3,6 +3,10 @@ import { QuizCompletedType } from './../Types/quiz-types';
 import { Button, Card, CardHeader, CardBody, CardText, CardFooter } from 'reactstrap';
 import Certificate from './Certificate';
 
+
+
+
+
 function QuizCompleted(props: QuizCompletedType) {
 
     let resultClass = '';
@@ -34,7 +38,7 @@ function QuizCompleted(props: QuizCompletedType) {
                             :
                             <>
                                 <p>You did a good job and got {per}% correct answers.</p>
-                                <p>Click on the button below to get your cool certificate !</p> 
+                                <p>Click on the button below to get your certificate.</p>
                             </>                           
                         }        
                     </CardText>

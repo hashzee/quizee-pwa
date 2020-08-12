@@ -1,23 +1,18 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-
 import Navigation from './Components/Navigation';
 import Home from './Components/Home';
 import Quiz from './Components/Quiz';
 
 import Footer from './Components/Footer';
 
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'App.css';
 
-
-
 class App extends Component{
-  
+
   render(){
-   
     return(
       <BrowserRouter>
         <Navigation/>
