@@ -16,7 +16,7 @@ async function sendNotification(){
             title: "Quizee",
             body: "Happy Independence Day from Zeeshan Hashmi",
             click_action: "",
-            icon:'https://zh-quizee.netlify.app/images/icons/pakistan-flag.png',
+            icon:'https://quizee-pwa.netlify.app/images/icons/pakistan-flag.png',
         },
         "to": token },
         { headers: { 'Content-Type': 'application/json','Authorization': 'key=AAAAHiHq_-s:APA91bEuyBNt1R2pXib-RmIvNkVCrUgEUvm0PnFbrB1RF6CRBOVGFjE6bRx7YAa8UBq15YgpWClcnYoOUARzf4XY1_u7UxlCSDoamXCnBLGXeLjMYAljV0N7WVZYjmCSdHJDMJ04KJau' } }
