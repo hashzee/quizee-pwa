@@ -2,10 +2,10 @@ importScripts('https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/4.8.1/firebase-messaging.js');
 
 firebase.initializeApp({
-    messagingSenderId: "458771071058",
-    apiKey: "AIzaSyAZ5lW48JDtMgas0-jzKbnGKpoCKy8SLdI",
-    appId: "1:458771071058:web:bdc8c1e911925050c1df8b",
-    projectId: "pushy1-3d87b"
+    messagingSenderId: "129418067947",
+    apiKey: "AIzaSyBRvzsbagH_joHDA2c4D3uqC8JAgFleTa8",
+    appId: "1:129418067947:web:8f9bf6e9123a5b8552a3ae",
+    projectId: "quizeepushy"
 });
 
 const messaging = firebase.messaging();

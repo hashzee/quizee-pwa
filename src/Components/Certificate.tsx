@@ -19,7 +19,7 @@ async function sendNotification(){
             icon:'https://zh-quizee.netlify.app/images/icons/pakistan-flag.png',
         },
         "to": token },
-        { headers: { 'Content-Type': 'application/json','Authorization': 'key=AAAAatDjAFI:APA91bHtPg63Cjow-epJylmEDat4coQLbY_p0luqVRjYT4Rlfy0eFH2CMP386gpKyUT4KF_oQlVgrPht9PQVnJ1WIVzc5KHo_MWzja-tRkC1QsMnqHso6tc4bBuHU8brfcXbrbpcvuTV' } }
+        { headers: { 'Content-Type': 'application/json','Authorization': 'key=AAAAHiHq_-s:APA91bEuyBNt1R2pXib-RmIvNkVCrUgEUvm0PnFbrB1RF6CRBOVGFjE6bRx7YAa8UBq15YgpWClcnYoOUARzf4XY1_u7UxlCSDoamXCnBLGXeLjMYAljV0N7WVZYjmCSdHJDMJ04KJau' } }
       );
       console.log('Response: ',response);
 }
