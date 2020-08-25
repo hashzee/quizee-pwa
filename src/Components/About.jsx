@@ -40,7 +40,7 @@ function About() {
           <Row>
             <Col className='col-12 mb-5 text-center'>
                 <h1>About Quizee</h1>
-                <p>Quizee is the result of studying and workking after hours to complete the requirements of Proect 5 & 6 of the <a href='https://panacloud.github.io/bootcamp-2020/' rel="noopener noreferrer" target='_blank'>Panacloud Bootcamp 2020</a>.</p>
+                <p>Quizee is the result of studying and workcing after hours to complete the requirements of Proect 5 & 6 of the course.</p>
                 <p>It was made using React/TypeScript, React Router, Hooks, PDF-Lib and I used the Web Animation API to add little animations.</p>
                 <p>In addition, some animated SVG files were used.</p>
      

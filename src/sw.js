@@ -1,3 +1,6 @@
+//
+// Below is my Custom Service Working for caching the dynamic contents
+//
 const dynamicCache = 'Quizee-Dynamic-Cache';
 const assets = [
     'https://opentdb.com/api.php?amount=10&category=18&type=multiple&difficulty=easy',

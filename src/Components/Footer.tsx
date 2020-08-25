@@ -16,7 +16,6 @@ function Footer() {
           <Col className="col-6 col-md">
             <h5>Resources</h5>
             <ul className="list-unstyled text-small">
-              <li><a className="text-muted" href="https://github.com/hashzee/quizee">Github</a></li>
               <li><a className="text-muted" href="https://www.typescriptlang.org/">TypeScript</a></li>
             </ul>
           </Col>
